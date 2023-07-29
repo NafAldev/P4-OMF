@@ -1,0 +1,22 @@
+{
+  "name": "p4-omf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --update ./sass/scss/style.scss:./sass/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NafAldev/P4-OMF..git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NafAldev/P4-OMF./issues"
+  },
+  "homepage": "https://github.com/NafAldev/P4-OMF.#readme",
+  "dependencies": {
+    "sass": "^1.64.1"
+  }
+}
