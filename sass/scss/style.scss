@@ -21,3 +21,39 @@ h1 {
     padding: 10px 0 5px 0;
    
 }
+
+.Location {
+    text-align: center;
+    padding: 20px;
+    background-color:#EAEAEA;
+    box-shadow: 2px 3px 4px 2px lightgray inset;
+    &__text {
+        font-weight:bolder;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
+
+
+.Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 120px 0;
+    gap:15px;
+    &__title{
+        font-weight: bolder;
+        font-size: 24px;
+        text-align: center;
+        padding: 15px;
+    }
+        &__text{
+            text-align: center;
+            padding: 15px;
+        }
+            &__btn{
+                @include button (#9356DC,#FF79DA);
+            }
+}
+
