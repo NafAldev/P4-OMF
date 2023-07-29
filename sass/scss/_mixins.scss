@@ -1,3 +1,5 @@
+
+
 @mixin button ($primaire, $secondaire) {
     border-radius: 100px;
     border: none;
@@ -8,4 +10,23 @@
     box-shadow: 4px 4px 10px lightgray;
     transition-duration: 0.20s;
 
+}
+
+@mixin shadow  {
+    box-shadow: 4px 4px 10px lightgrey;
+}
+
+@mixin number {
+    display: inline-block;
+    text-align: center;
+    border: $cl-primary 1px solid;
+    height: 30px;
+    width: 30px;
+    border-radius:50%;
+    background-color: $cl-primary;
+    color: white;
+    font-size: 14px;
+    padding-top: 5px;
+    position: relative;
+    left: -25px;
 }
