@@ -1,16 +1,5 @@
 
 
-@mixin button ($primaire, $secondaire) {
-    border-radius: 100px;
-    border: none;
-    background: linear-gradient($primaire,$secondaire);
-    padding: 15px 30px;
-    color: white;
-    font-size: 16px;
-    box-shadow: 4px 4px 10px lightgray;
-    transition-duration: 0.20s;
-
-}
 
 @mixin shadow  {
     box-shadow: 4px 4px 10px lightgrey;

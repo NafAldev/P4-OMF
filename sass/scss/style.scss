@@ -47,8 +47,13 @@ h1 {
         padding: 10px 20px;   
     }
         &__btn{
+            
             @include button (#9356DC,#FF79DA);
         }
+            &__btn:hover{
+                @include btn-hover;
+            }
+            
 }
 
 .Demo{
@@ -128,8 +133,8 @@ h1 {
     background-color: #353535;
     color:white;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+
     &__logo{
         font-family: Shrikhand,"cursive";
         padding: 15px 40px;
@@ -141,10 +146,8 @@ h1 {
             &__link > i {
                 margin-right: 5px;
             }
-
                 &__link > a {
                     text-decoration: none;
                     color: white;
-
                 }
 }

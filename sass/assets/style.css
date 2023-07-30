@@ -41,8 +41,12 @@ h1 {
   padding: 15px 30px;
   color: white;
   font-size: 16px;
-  box-shadow: 4px 4px 10px lightgray;
-  transition-duration: 0.2s;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.35s;
+}
+.Intro__btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
 .Demo {
