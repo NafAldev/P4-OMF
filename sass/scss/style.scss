@@ -150,6 +150,20 @@ h1 {
             object-fit: cover;
             border-radius: 20px 20px 0px 0px;
         }
+            &__new{
+                background-color: $cl-tertiary;
+                padding: 5px 15px;
+                color:#008766;
+                position: absolute;
+                right: 30px;
+                margin-top: 10px;
+                border-radius: 3px;
+                
+                
+            
+            
+            }
+
             &__content{
                 height: 70px;
                 display: flex;
