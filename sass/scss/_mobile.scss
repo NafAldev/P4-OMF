@@ -1,7 +1,7 @@
-
 @import "buttons";
 @import "mixins";
-@import "variables";
+@import"variables";
+
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@ body{
     height: 100%;
 
 }
-
+/*
 .Loader{
     position:fixed;
     display: flex;
@@ -52,6 +52,7 @@ body{
     animation: rotate3 3s linear 3;
 }
   
+*/
 
 
 h1 {
@@ -96,10 +97,9 @@ h1 {
 }
 
 .Demo{
-    display: flex;
-    flex-direction: column;
     gap: 15px;
     margin-bottom: 50px;
+    width:100%; 
     
     &__title{
         margin-left: 20px;
@@ -145,15 +145,13 @@ h1 {
             width: 100%;
             object-fit: cover;
             border-radius: 20px 20px 0px 0px;
-        }
+        } 
             &__new{
                 background-color: $cl-tertiary;
                 padding: 5px 15px;
                 color:#008766;
-                position: absolute;
-                right: 30px;
-                margin-top: 10px;
-                border-radius: 3px;  
+                position: relative;
+                border-radius: 3px;
             }
 
             &__content{
