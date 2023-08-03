@@ -1,0 +1,66 @@
+.Resto{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.Cards{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+
+    &__resto{
+        border-radius: 20px;
+        position: relative;
+    }
+        &__resto > img {
+            height:180px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+        } 
+            &__badge{
+                background-color: $cl-tertiary;
+                padding: 5px 8px;
+                color: darken($color: $cl-tertiary, $amount: 50%);
+                position:absolute;
+                border-radius: 3px;
+                border:black 1px solid;
+                right: 20px;
+                top: 10px;
+                }
+
+            &__content{
+                height: 70px;
+                display: flex;
+                color: black;
+            }
+
+                &__subtitle{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    gap: 5px;
+                }
+                    &__heart{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                        &__heart > i {
+                            position: absolute;
+                            border: RED 1PX solid;
+                            height: 30px;
+                            width: 30px;
+                            font-size: 30px;
+                        }
+                            .h-full{
+                                @include heart;  
+                                &:hover{
+                                    @include heart-hover;
+                                }
+                            }    
+}

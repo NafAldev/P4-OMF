@@ -1,0 +1,22 @@
+@import "../components/buttons";
+
+
+.Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 120px 0;
+    gap:30px;  
+    text-align: center;
+    &__title + &__text{
+        padding: 10px 20px;   
+    }
+        &__btn{ 
+            @include button (#9356DC,#FF79DA);
+        }
+            &__btn:hover{
+                @include btn-hover;
+            }
+            
+}

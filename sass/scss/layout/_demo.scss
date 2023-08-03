@@ -1,0 +1,29 @@
+
+@import "../utils/mixins";
+
+
+.Demo{
+    margin-bottom: 50px;
+    
+    &__title{
+        margin-left: 20px;
+    }
+    
+        &__step{
+            padding: 20px;
+            margin: 10px 5px 30px 10px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 10px lightgrey;
+        }
+            &__number{
+                @include number;
+            }
+                &__text{
+                    font-weight: bold;
+                    padding-left: 10px;
+                }
+                    .fa-solid{
+                        color: grey;
+                    }
+}
+

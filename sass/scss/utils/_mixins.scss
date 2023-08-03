@@ -1,5 +1,4 @@
-
-
+@import "../utils/variables";
 
 @mixin number {
     display: inline-block;
@@ -22,7 +21,6 @@
         transition: all;
         transition-duration: 0.70s;                            
 }
-
 
 
 @mixin heart-hover {

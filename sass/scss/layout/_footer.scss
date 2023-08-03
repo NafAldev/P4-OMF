@@ -1,0 +1,26 @@
+
+
+.Footer{
+    border: #9356DC 1px solid; 
+    background-color: #353535;
+    color:white;
+    display: flex;
+    flex-direction: column; 
+    
+    &__logo{
+        font-family: Shrikhand,"cursive";
+        padding: 15px 30px;
+    }    
+        &__link{
+            margin-top :8px;
+            list-style-type: none;
+            padding-left: 30px;
+        }
+            &__link > i {
+                margin-right: 5px;   
+            }
+                &__link > a {
+                    color: white;
+                }
+}
+

@@ -1,6 +1,22 @@
-@use "buttons";
-@use "effets";
-@use "homepage";
-@use "mobile";
-@use "mixins";
-@use "variables";
+@import "../scss/layout/header";
+@import "../scss/layout/location";
+@import "../scss/layout/intro";
+@import "../scss/layout/demo";
+@import "../scss/layout/cards";
+@import "../scss/layout/footer";
+@import "../scss/pages/homepage";
+@import "../scss/pages/general_setting";
+@import "../scss/components/buttons";
+@import "../scss/components/loader";
+@import "../scss/utils/animations";
+@import "../scss/utils/mixins";
+@import "../scss/utils/variables";
+
+
+
+
+
+
+
+
+
