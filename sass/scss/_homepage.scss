@@ -1,20 +1,68 @@
+@import "mixins";
+
+
 @media (min-width:1024px) {
-    .Demo__steps{
-        border: 1px solid black;
-        display: flex; 
-    }   
-        .Demo__step{
-            width: 33%;
-        }
-    
-    
+  
+    .Demo{
+        @include paddingDesktop;
+        &__steps{
+            border: 1px solid black;
+            display: flex;
+        }   
+            &__step{
+                width: 33%;
+
+            }
+    }
+    .one{
+        order: 1;
+    }
+   
+    .two {
+        order: 3;
+        border: purple 1px solid;
+    }
+
+    .three{
+        order: 2;
+
+    }
+    .four{
+        order: 4;
+    }
+
     .Cards{
         flex-wrap: wrap;
-        height: 600px; 
+        height: 600px;
+        align-items: center; 
     
-       &__resto{
-        width: 45%;
-       }
+        &__resto{
+            width: 45%;
+    
+        }    
     }    
+
+    .Footer{
+        height: 100px;
+        position: relative;
+        &__container{
+            border: 1px solid red;
+        }
+            &__logo{
+                position: absolute;
+                border: 1px solid white;
+                bottom: 1px;
+                right: 1px;
+                
+            }
+                &__links{
+                    display: flex;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 10px; 
+                }
+         
+    }
 }
-    
+
+
