@@ -13,7 +13,8 @@
                 width: 33%;
 
             }
-    }
+        }
+        
     .one{
         order: 1;
     }
@@ -32,15 +33,17 @@
     }
 
     .Cards{
-        flex-wrap: wrap;
         height: 600px;
-        align-items: center; 
+        border: 1px solid black;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .Cards__link{
+        
     
-        &__resto{
-            width: 45%;
-    
-        }    
-    }    
+        width: 40%;
+       
+    }
 
     .Footer{
         height: 100px;

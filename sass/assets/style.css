@@ -191,12 +191,13 @@ h1 {
     order: 4;
   }
   .Cards {
-    flex-wrap: wrap;
     height: 600px;
+    border: 1px solid black;
+    flex-wrap: wrap;
     align-items: center;
   }
-  .Cards__resto {
-    width: 45%;
+  .Cards__link {
+    width: 40%;
   }
   .Footer {
     height: 100px;
