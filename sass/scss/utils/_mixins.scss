@@ -54,3 +54,8 @@
 @mixin paddingDesktop {
     padding: 0 60px;
 }
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}

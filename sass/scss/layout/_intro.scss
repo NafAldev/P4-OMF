@@ -1,9 +1,9 @@
 @import "../components/buttons";
+@import "../utils/mixins";
 
 
 .Intro {
-    display: flex;
-    flex-direction: column;
+    @include column;
     justify-content: center;
     align-items: center;
     margin: 40px 0 120px 0;

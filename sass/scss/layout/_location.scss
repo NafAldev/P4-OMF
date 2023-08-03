@@ -1,7 +1,9 @@
+@import "../utils/variables";
+
 .Location {
     text-align: center;
     padding: 20px;
-    background-color:#EAEAEA;
+    background-color:$cl-bgloc;
     box-shadow: 4px 4px 10px lightgrey inset;
     &__text {
         font-weight:bolder;

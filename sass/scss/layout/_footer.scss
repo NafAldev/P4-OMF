@@ -1,11 +1,9 @@
 
 
-.Footer{
-    border: #9356DC 1px solid; 
-    background-color: #353535;
-    color:white;
-    display: flex;
-    flex-direction: column; 
+.Footer {
+    background-color: $cl-bgfooter;
+    color:$cl-white;
+    @include column;
     
     &__logo{
         font-family: Shrikhand,"cursive";
@@ -20,7 +18,7 @@
                 margin-right: 5px;   
             }
                 &__link > a {
-                    color: white;
+                    color: $cl-white;
                 }
 }
 
