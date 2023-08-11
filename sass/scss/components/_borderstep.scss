@@ -1,0 +1,9 @@
+
+
+@mixin borderstep{
+    border-radius: 12PX;
+    box-shadow: 4px 4px 10px lightgrey; 
+    display: flex;
+    align-items: center;
+    height: 69px;
+}

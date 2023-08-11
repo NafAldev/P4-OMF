@@ -1,0 +1,21 @@
+// header menu restaurants 
+
+
+@mixin headermenu {
+    border:  1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    position: relative;
+
+}
+
+@mixin back {
+        position: absolute;
+        color: black;
+        font-size: 25px;
+        left: 20px;
+        bottom: 25%;
+}
+
+
