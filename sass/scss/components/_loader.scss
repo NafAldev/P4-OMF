@@ -3,12 +3,11 @@
 
 .Loader{
     position:fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 5;
+    @include flex-center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0, 0, 0.7);
+    background-color: rgba(0,0, 0, 0.4);
     animation: off 3s linear forwards;
 }
 

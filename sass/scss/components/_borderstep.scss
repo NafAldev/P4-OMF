@@ -1,9 +1,16 @@
 
 
-@mixin borderstep{
+@mixin borderstepmenu {
     border-radius: 12PX;
     box-shadow: 4px 4px 10px lightgrey; 
-    display: flex;
-    align-items: center;
+    @include flex-center;
     height: 69px;
+    margin: 0 10px;
+}
+
+@mixin borderstep {
+    padding: 25px;
+    margin: 15px 10px;
+    border-radius:20px ;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
 }

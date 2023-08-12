@@ -1,0 +1,59 @@
+
+.Meals{
+    @include column;
+    gap: 10px;
+    animation: slide 2s;
+    
+    &__titles{
+        font-size: 16px;
+        position: relative;
+        padding: 15px 0 5px 0;
+    }   
+        &__titles::after{
+            content: "";
+            width: 40px;
+            background-color: $cl-tertiary;
+            position: absolute;
+            height: 2px;
+            bottom: 1px;
+            left: 1px;
+            
+        }
+            &__descriptions{
+                @include borderstepmenu;
+                overflow: hidden;
+
+
+            }
+                &__subtitles{
+        
+                    @include column;
+                    flex-grow: 1;
+                    margin-left: 15px;
+                }
+                &__prices{
+                    border: 1px solid black;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
+                    &__check{
+                        background-color: $cl-tertiary;
+                        height: 69px;
+                        margin-right: -59px;
+                        width: 59px;
+                        transition: margin-right 0.7s;
+                        @include flex-center;
+
+                    }
+                    &__descriptions:hover &__check{
+                        margin-right: 0;
+                    }
+
+                    .fa-circle-check{
+                        color:$cl-white;
+                        font-size: 25px;
+                        font-weight: bolder;
+                        background-color: $cl-tertiary;
+                    }
+                  
+}                 

@@ -41,9 +41,7 @@
                     gap: 5px;
                 }
                     &__heart{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                       @include flex-center;
                         
                     }
                         &__heart > i {

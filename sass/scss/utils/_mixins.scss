@@ -18,8 +18,7 @@
 
 @mixin heart {
         opacity: 0;
-        transition: all;
-        transition-duration: 0.70s;                            
+        transition: all 0.5s linear;                   
 }
 
 
@@ -34,9 +33,7 @@
 
 @mixin loader {
     position:fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     height: 100%;
     width: 100%;
     background-color: rgba(255,255, 255, 0.7);
@@ -58,4 +55,10 @@
 @mixin column {
     display: flex;
     flex-direction: column;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
