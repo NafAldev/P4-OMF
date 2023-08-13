@@ -30,22 +30,28 @@
                     position: relative;
                     margin-top: -40px;
                     background-color: $cl-bgmenucontainer;
+                
                 }
+                
 }
 
 .Menu__title{
     @include flex-center;
     height: 50px;
     gap: 15px;
+
     & > h2{
         font-family: 'Shrikhand', cursive;
     }
-
-        &__heart {
+    
+        .Menu__heart > i{
+            position: absolute;
             border: 1px solid red;
             font-size: 20px;
-            position: absolute;
-            right: 15%;
+            top: 12px;
+           
+            
+        
         }
 
             .h-full{
@@ -68,9 +74,34 @@
         }
     }
 
-
-@for $i from 0 to 3 {
-    .delay-#{$i} {
-        animation-delay:calc($i/3);
+    @for $i from 0 to 3 {
+        #delay-#{$i} {
+            animation-delay: $i * 0.3s;
+        }
     }
+
+
+    @media (min-width: 768px) {
+        .Menu__container{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .Footer{
+            &__container{
+                display: flex;
+                flex-direction: row-reverse;
+
+            }
+                    &__links{
+                        display: flex;
+                        margin-top: 10px;
+                    }
+                        &__link{
+                            font-size: 12px;
+                        }
+        }
+            
+
 }

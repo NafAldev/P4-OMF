@@ -22,9 +22,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 0 120px 0;
+  height: 230px;
   gap: 30px;
   text-align: center;
+  background-color: #F6F6F6;
 }
 .Intro__title + .Intro__text {
   padding: 10px 20px;
@@ -37,6 +38,7 @@ h1 {
   padding: 15px 20px;
   color: white;
   font-size: 14px;
+  font-weight: bold;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   transition-duration: 0.35s;
 }
@@ -85,6 +87,10 @@ h1 {
   flex-direction: column;
   padding: 20px;
   gap: 20px;
+  background-color: #F6F6F6;
+}
+.Resto__title {
+  padding-left: 50px;
 }
 
 .Cards {
@@ -95,6 +101,8 @@ h1 {
 .Cards__resto {
   border-radius: 20px;
   position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 15px lightgray;
 }
 .Cards__resto > img {
   height: 180px;
@@ -259,11 +267,11 @@ h1 {
 .Menu__title > h2 {
   font-family: "Shrikhand", cursive;
 }
-.Menu__title__heart {
+.Menu__title .Menu__heart > i {
+  position: absolute;
   border: 1px solid red;
   font-size: 20px;
-  position: absolute;
-  right: 15%;
+  top: 12px;
 }
 .Menu__title .h-full {
   opacity: 0;
@@ -290,6 +298,7 @@ h1 {
   padding: 15px 20px;
   color: white;
   font-size: 14px;
+  font-weight: bold;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   transition-duration: 0.35s;
 }
@@ -299,24 +308,43 @@ h1 {
   filter: brightness(1.12);
 }
 
-.delay-0 {
-  animation-delay: 0;
+#delay-0 {
+  animation-delay: 0s;
 }
 
-.delay-1 {
-  animation-delay: 0.3333333333;
+#delay-1 {
+  animation-delay: 0.3s;
 }
 
-.delay-2 {
-  animation-delay: 0.6666666667;
+#delay-2 {
+  animation-delay: 0.6s;
 }
 
+@media (min-width: 768px) {
+  .Menu__container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .Footer__links {
+    display: flex;
+    margin-top: 10px;
+  }
+  .Footer__link {
+    font-size: 12px;
+  }
+}
 @media (min-width: 1024px) {
   .Demo {
     padding: 0 60px;
+    padding-left: 13%;
+    padding-right: 13%;
   }
   .Demo__steps {
-    border: 1px solid black;
     display: flex;
   }
   .Demo__step {
@@ -327,7 +355,6 @@ h1 {
   }
   .two {
     order: 3;
-    border: purple 1px solid;
   }
   .three {
     order: 2;
@@ -337,31 +364,23 @@ h1 {
   }
   .Cards {
     height: 600px;
-    border: 1px solid black;
     flex-wrap: wrap;
     align-items: center;
   }
   .Cards__link {
     width: 40%;
   }
-  .Footer {
-    height: 100px;
-    position: relative;
+  .Resto {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .Footer__container {
-    border: 1px solid red;
-  }
-  .Footer__logo {
-    position: absolute;
-    border: 1px solid white;
-    bottom: 1px;
-    right: 1px;
+    display: flex;
+    flex-direction: row-reverse;
   }
   .Footer__links {
     display: flex;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
+    margin-top: 10px;
   }
 }
 * {
@@ -385,7 +404,7 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(255, 255, 255);
   animation: off 3s linear forwards;
 }
 
@@ -400,19 +419,19 @@ h1 {
 .circle:nth-child(1) {
   border-bottom-width: 8px;
   border-color: #9356DC;
-  animation: rotate1 3s linear 3;
+  animation: rotate1 2s linear 2;
 }
 
 .circle:nth-child(2) {
   border-right-width: 8px;
   border-color: #FF79DA;
-  animation: rotate2 3s linear 3;
+  animation: rotate2 2s linear 2;
 }
 
 .circle:nth-child(3) {
   border-top-width: 8px;
   border-color: #99E2D0;
-  animation: rotate3 3s linear 3;
+  animation: rotate3 2s linear 2;
 }
 
 @keyframes off {
@@ -487,12 +506,19 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin-left: 15px;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.Meals__subtitles > p, .Meals h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
 }
 .Meals__prices {
-  border: 1px solid black;
   font-weight: bold;
   margin-top: 20px;
+  padding-right: 5px;
 }
 .Meals__check {
   background-color: #99E2D0;

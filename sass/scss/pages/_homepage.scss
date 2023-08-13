@@ -5,8 +5,9 @@
   
     .Demo{
         @include paddingDesktop;
+        padding-left: 13%;
+        padding-right: 13%;
         &__steps{
-            border: 1px solid black;
             display: flex;
         }   
             &__step{
@@ -21,7 +22,6 @@
    
     .two {
         order: 3;
-        border: purple 1px solid;
     }
 
     .three{
@@ -34,7 +34,6 @@
 
     .Cards{
         height: 600px;
-        border: 1px solid black;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -43,27 +42,21 @@
        
     }
 
+    .Resto,{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
     .Footer{
-        height: 100px;
-        position: relative;
         &__container{
-            border: 1px solid red;
+            display: flex;
+            flex-direction: row-reverse;
         }
-            &__logo{
-                position: absolute;
-                border: 1px solid white;
-                bottom: 1px;
-                right: 1px;
-                
-            }
                 &__links{
                     display: flex;
-                    position: absolute;
-                    bottom: 20px;
-                    left: 10px; 
+                    margin-top: 10px;
                 }
-         
     }
+
 }
-
-

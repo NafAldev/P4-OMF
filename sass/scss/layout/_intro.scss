@@ -6,9 +6,10 @@
     @include column;
     justify-content: center;
     align-items: center;
-    margin: 40px 0 120px 0;
+    height: 230px;
     gap:30px;  
     text-align: center;
+    background-color: $cl-bgmenucontainer;
     &__title + &__text{
         padding: 10px 20px;   
     }
