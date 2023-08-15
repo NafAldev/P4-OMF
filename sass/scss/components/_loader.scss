@@ -7,7 +7,7 @@
     @include flex-center;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255,);
+    background-color: $cl-white;
     animation: off 3s linear forwards;
 }
 
@@ -22,12 +22,12 @@
 .circle:nth-child(1){
     border-bottom-width: 8px;
     border-color: $cl-primary;
-    animation: rotate1 2s linear 2 ;
+    animation: rotate1 2s linear 2;
 }
 .circle:nth-child(2){
     border-right-width: 8px;
     border-color:$cl-secondary;
-    animation: rotate2 2s linear 2 ;
+    animation: rotate2 2s linear 2;
 }
 .circle:nth-child(3){
     border-top-width:8px;

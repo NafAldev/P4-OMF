@@ -1,3 +1,5 @@
+// cards menu 
+
 .Resto{
     @include column;
     padding: 20px;
@@ -15,7 +17,7 @@
     &__resto{
         border-radius: 20px;
         position: relative;
-        background-color: #FFFFFF;
+        background-color: $cl-white;
         box-shadow: 0 5px 15px lightgray;
     }
         &__resto > img {
@@ -52,9 +54,9 @@
                     }
                         &__heart > i {
                             position: absolute;
-                            height: 30px;
-                            width: 30px;
-                            font-size: 30px;
+                            height:$heart-var;
+                            width: $heart-var;
+                            font-size: $heart-var;
                         }
                             .h-full{
                                 @include heart;  

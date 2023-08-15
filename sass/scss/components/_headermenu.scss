@@ -1,18 +1,19 @@
+@import "../utils/mixins";
+@import "../utils/variables";
 // header menu restaurants 
 
 
 @mixin headermenu {
     @include flex-center;
     position: relative;
-
 }
 
 @mixin back {
-        position: absolute;
-        color: black;
-        font-size: 25px;
-        left: 20px;
-        bottom: 25%;
+    position: absolute;
+    color: $cl-black;
+    font-size: 25px;
+    left: 20px;
+    bottom: 25%;
 }
 
 

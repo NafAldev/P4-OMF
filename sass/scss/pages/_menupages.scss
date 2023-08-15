@@ -1,4 +1,4 @@
-@use "sass:math";
+
 @import "../pages/general_setting";
 @import "../components/headermenu";
 @import "../components/buttons";
@@ -7,52 +7,43 @@
 
 
 .Menu{
-
     &__header{
         @include headermenu;
-
-        .fa-arrow-left {
-            @include back;
-        }
     }
-            &__image{
-                object-fit: cover;
-                width: 100%;
-                height: 275px;
-                z-index: 1;
+        &__image{
+            object-fit: cover;
+            width: 100%;
+            height: 275px;
+            z-index: 1;
+            position: relative;
+        }   
+            &__container{
+                border-radius: 40px 40px 0px 0px;
+                z-index: 2;
                 position: relative;
-            }   
-
-                &__container{
-                    border-radius: 40px 40px 0px 0px;
-                    z-index: 2;
-                    position: relative;
-                    margin-top: -40px;
-                    background-color: $cl-bgmenucontainer;
-                
-                }
-                
+                margin-top: -40px;
+                background-color: $cl-bgmenucontainer;
+            }
+            
 }
+
+.fa-arrow-left {
+    @include back;
+}
+
 
 .Menu__title{
     @include flex-center;
     height: 50px;
     gap: 15px;
-
     & > h2{
         font-family: 'Shrikhand', cursive;
     }
-    
         .Menu__heart > i{
             position: absolute;
-            border: 1px solid red;
             font-size: 20px;
             top: 12px;
-           
-            
-        
         }
-
             .h-full{
                 @include heart;  
                 &:hover{
@@ -64,10 +55,7 @@
 
 .Btn{
     padding: 30px 0;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
     .Btn__co{
         @include button (#9356DC,#FF79DA);
@@ -77,11 +65,12 @@
         }
     }
 
-    @for $i from 0 to 3 {
-        #delay-#{$i} {
-            animation-delay: $i * 0.3s;
-        }
+
+@for $i from 0 to 3 {
+    #delay-#{$i} {
+        animation-delay: $i * 0.3s;
     }
+}
 
 
     @media (min-width: 768px) {

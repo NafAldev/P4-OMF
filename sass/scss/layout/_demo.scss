@@ -4,28 +4,26 @@
 
 
 .Demo{
-    margin: 50px 0;
-    
+    margin: 50px 0; 
     &__title{
         margin-left: 15px;
     }
         &__step{
-            @include borderstep;
-           
+            @include borderstep;   
         }
-        
             &__number{
                 @include number;
             }
                 &__text{
                     font-weight: bold;
                     padding-left: 10px;
-                    font-size: 14px;
+                    font-size: 15px;
                     display: flex;
-                    
                 }
                     .fa-solid{
                         color: $cl-icon;
                     }
+
 }
+
 

@@ -4,17 +4,16 @@
 
 .Intro {
     @include column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap:30px;  
     text-align: center;
     background-color: $cl-bgmenucontainer;
-    padding: 20px 0 30px 0;
+    padding: 20px 0 $padding-var 0;
     &__title + &__text{
         padding: 10px 20px;   
     }
         &__btn{ 
-            @include button (#9356DC,#FF79DA);
+            @include button ($cl-primary, $cl-secondary);
         }
             &__btn:hover{
                 @include btn-hover;

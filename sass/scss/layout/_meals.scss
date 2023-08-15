@@ -1,9 +1,9 @@
+// Menu 
 
 .Meals{
     @include column;
     gap: 10px;
     animation: slide 2s;
-    
     &__titles{
         font-size: 16px;
         position: relative;
@@ -16,17 +16,13 @@
             position: absolute;
             height: 2px;
             bottom: 1px;
-            left: 1px;
-            
+            left: 1px;         
         }
             &__descriptions{
                 @include borderstepmenu;
                 overflow: hidden;
-
-
             }
                 &__subtitles{
-        
                     @include column;
                     flex-grow: 1;
                     margin-left: 10px;
@@ -38,29 +34,29 @@
                     overflow: hidden; 
                     font-size: 14px;
                 }
-                &__prices{
-                    font-weight: bold;
-                    margin-top: 20px;
-                    padding-right:5px ;
-                }
-                    &__check{
-                        background-color: $cl-tertiary;
-                        height: 69px;
-                        margin-right: -59px;
-                        width: 59px;
-                        transition: margin-right 0.7s;
-                        @include flex-center;
+                    &__prices{
+                        font-weight: bold;
+                        margin-top: 20px;
+                        padding-right:5px ;
+                    }
+                        &__check{
+                            background-color: $cl-tertiary;
+                            height: 69px;
+                            margin-right:-$check-var;
+                            width:$check-var;
+                            transition: margin-right 0.7s;
+                            @include flex-center;
 
-                    }
-                    &__descriptions:hover &__check{
-                        margin-right: 0;
-                    }
+                        }
+                        &__descriptions:hover &__check{
+                            margin-right: 0;
+                        }
 
-                    .fa-circle-check{
-                        color:$cl-white;
-                        font-size: 25px;
-                        font-weight: bolder;
-                        background-color: $cl-tertiary;
-                    }
+                        .fa-circle-check{
+                            color:$cl-white;
+                            font-size: 25px;
+                            font-weight: bolder;
+                            background-color: $cl-tertiary;
+                        }
                   
 }                 

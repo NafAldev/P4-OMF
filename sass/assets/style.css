@@ -20,6 +20,7 @@ h1 {
 .Intro {
   display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -79,7 +80,7 @@ h1 {
 .Demo__text {
   font-weight: bold;
   padding-left: 10px;
-  font-size: 14px;
+  font-size: 15px;
   display: flex;
 }
 .Demo .fa-solid {
@@ -105,7 +106,7 @@ h1 {
 .Cards__resto {
   border-radius: 20px;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: white;
   box-shadow: 0 5px 15px lightgray;
 }
 .Cards__resto > img {
@@ -238,13 +239,6 @@ h1 {
   align-items: center;
   position: relative;
 }
-.Menu__header .fa-arrow-left {
-  position: absolute;
-  color: black;
-  font-size: 25px;
-  left: 20px;
-  bottom: 25%;
-}
 .Menu__image {
   object-fit: cover;
   width: 100%;
@@ -260,6 +254,14 @@ h1 {
   background-color: #F6F6F6;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  left: 20px;
+  bottom: 25%;
+}
+
 .Menu__title {
   display: flex;
   justify-content: center;
@@ -272,7 +274,6 @@ h1 {
 }
 .Menu__title .Menu__heart > i {
   position: absolute;
-  border: 1px solid red;
   font-size: 20px;
   top: 12px;
 }
@@ -290,7 +291,6 @@ h1 {
 
 .Btn {
   padding: 30px 0;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,7 +421,7 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   animation: off 3s linear forwards;
 }
 

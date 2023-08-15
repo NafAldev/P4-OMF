@@ -4,15 +4,15 @@
     background-color: $cl-bgfooter;
     color:$cl-white;
     @include column;
-    padding:30px 0;
+    padding:$padding-var 0;
     &__logo{
         font-family: Shrikhand,"cursive";
-        padding: 15px 30px;
+        padding: 15px $padding-var ;
     }    
         &__link{
             margin-top :8px;
             list-style-type: none;
-            padding-left: 30px;
+            padding-left:$padding-var ;
         }
             &__link > i {
                 margin-right: 5px;   
