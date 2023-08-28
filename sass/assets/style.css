@@ -63,6 +63,9 @@ h1 {
   display: flex;
   align-items: center;
 }
+.Demo__step:hover i {
+  color: #9356DC;
+}
 .Demo__number {
   display: inline-block;
   text-align: center;
@@ -93,9 +96,6 @@ h1 {
   padding: 20px;
   gap: 20px;
   background-color: #F6F6F6;
-}
-.Resto__title {
-  padding-left: 50px;
 }
 
 .Cards {
@@ -381,6 +381,9 @@ h1 {
   .Resto {
     padding-left: 7%;
     padding-right: 7%;
+  }
+  .Resto__title {
+    padding-left: 10%;
   }
   .Footer__container {
     display: flex;
